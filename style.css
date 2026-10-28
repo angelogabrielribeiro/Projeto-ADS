@@ -1,0 +1,90 @@
+/* Reset básico para alinhar margens e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d0d0d; /* Fundo escuro sofisticado */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.loja-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #f3f3f3;
+}
+
+/* Flexbox para alinhar os 3 cards lado a lado */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Garante responsividade se a tela for menor */
+    margin-bottom: 40px;
+}
+
+/* Estilo individual de cada card de roupa */
+.card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito sutil de elevação ao passar o mouse no card */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.08);
+}
+
+/* Garante que a imagem se ajuste perfeitamente dentro do card */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilização do Botão Call to Action (CTA) */
+.cta-container {
+    margin-top: 20px;
+}
+
+.btn-compre {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #0d0d0d;
+    padding: 16px 48px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+}
+
+.btn-compre:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.03);
+    box-shadow: 0 6px 25px rgba(255, 255, 255, 0.3);
+}
