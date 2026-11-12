@@ -1,65 +1,13 @@
-# Prato Para Todos
+♻️ CICLOVA
 
-Projeto acadêmico desenvolvido no curso de **Análise e Desenvolvimento de Sistemas**, com foco em sustentabilidade, inclusão e experiência digital.
+Plataforma de economia circular que conecta recursos a novos destinos, reduzindo desperdícios e promovendo seu reaproveitamento.
 
-## Sobre o projeto
+🤝 Pilar Social
+Conecta estabelecimentos com alimentos próprios para consumo a ONGs e instituições que possam distribuí-los.
 
-O **Prato Para Todos** é uma proposta de plataforma para aproximar alimentos disponíveis de organizações capazes de transformar excedentes em refeições, ajudando a reduzir desperdício e facilitar conexões entre doadores e iniciativas sociais.
+⚡ Pilar Bio
+Destina resíduos orgânicos impróprios para consumo a empresas de biodigestão, possibilitando sua transformação em biogás e energia.
 
-## Status atual
-
-**Fase atual: prototipação de interface no Figma.**
-
-Neste momento, o projeto está concentrado na definição da experiência, estrutura das páginas, hierarquia visual e navegação. **Ainda não existe implementação em HTML, CSS ou JavaScript neste repositório.**
-
-A etapa de desenvolvimento será adicionada posteriormente, conforme o avanço da disciplina e dos estudos de programação.
-
-## Estrutura planejada
-
-O protótipo prevê páginas e seções para:
-
-- apresentação do projeto;
-- explicação do problema e da proposta;
-- fluxo de funcionamento da plataforma;
-- mural de oportunidades/resgates;
-- oferta de alimentos;
-- informações sobre a iniciativa;
-- guia de utilização;
-- contato;
-- rodapé com navegação e redes sociais.
-
-## Ferramenta utilizada até o momento
-
-- **Figma** — prototipação, organização visual, componentes e definição da experiência de navegação.
-
-## Tecnologias previstas para a implementação
-
-Quando a fase de código começar, a proposta é evoluir o projeto utilizando:
-
-- HTML;
-- CSS;
-- JavaScript;
-- Git e GitHub.
-
-Integrações com APIs, banco de dados ou serviços como Supabase podem ser estudadas posteriormente, mas **não fazem parte da implementação atual**.
-
-## Objetivos acadêmicos
-
-O projeto é utilizado para desenvolver conhecimentos em:
-
-- planejamento de interfaces;
-- organização de conteúdo;
-- hierarquia visual;
-- responsividade;
-- experiência do usuário;
-- prototipação no Figma;
-- preparação para futura implementação em HTML, CSS e JavaScript;
-- versionamento e documentação de projetos com GitHub.
-
-## Próxima etapa
-
-Transformar o protótipo desenvolvido no Figma em uma aplicação web funcional, adicionando os arquivos de código a este repositório conforme o desenvolvimento avançar.
-
----
-
+📊 Pilar Market
+Oferece informações sobre demanda, preços e movimentação do mercado de recicláveis, ajudando recicladores a identificar oportunidades de comercialização.
 Projeto acadêmico desenvolvido durante a graduação em **Análise e Desenvolvimento de Sistemas**.
