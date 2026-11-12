@@ -1,0 +1,280 @@
+/* Definição da Paleta de Cores do Trello */
+:root {
+    --dark-base: #07100F;
+    --surface: #0D1C1A;
+    --tech-blue: #164E63;
+    --digital-green: #18B878;
+    --energy-amber: #F5A742;
+    --muted-text: #9AAFA7;
+    --primary-text: #F1F5F3;
+}
+
+/* Reset Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dark-base);
+    color: var(--primary-text);
+    line-height: 1.6;
+}
+
+/* Container Padrão */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Cabeçalho / Navbar Fixa */
+.header {
+    background-color: var(--surface);
+    border-bottom: 1px solid rgba(154, 175, 167, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--digital-green);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--muted-text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--digital-green);
+}
+
+.btn-nav {
+    background-color: var(--digital-green);
+    color: var(--dark-base) !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 600 !important;
+    transition: opacity 0.3s ease;
+}
+
+.btn-nav:hover {
+    opacity: 0.9;
+}
+
+/* Seção Hero (Banner Principal) */
+.hero {
+    padding: 160px 0 100px;
+    background: linear-gradient(135deg, var(--dark-base) 0%, var(--surface) 100%);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: rgba(24, 184, 120, 0.1);
+    color: var(--digital-green);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(24, 184, 120, 0.2);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--primary-text);
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--muted-text);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--digital-green);
+    color: var(--dark-base);
+}
+
+.btn-primary:hover {
+    background-color: #149c66;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-text);
+    border: 1px solid var(--muted-text);
+}
+
+.btn-secondary:hover {
+    border-color: var(--primary-text);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Seção de Pilares */
+.pillars {
+    padding: 100px 0;
+    background-color: var(--dark-base);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-text);
+}
+
+.section-title p {
+    color: var(--muted-text);
+    font-size: 1.1rem;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--surface);
+    border: 1px solid rgba(154, 175, 167, 0.1);
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--digital-green);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(24, 184, 120, 0.1);
+    color: var(--digital-green);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Cores customizadas por ícone conforme a paleta */
+.pillar-bio .card-icon {
+    background-color: rgba(245, 167, 66, 0.1);
+    color: var(--energy-amber);
+}
+
+.pillar-market .card-icon {
+    background-color: rgba(22, 78, 99, 0.4);
+    color: #38bdf8;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary-text);
+}
+
+.card p {
+    color: var(--muted-text);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Rodapé */
+.footer {
+    background-color: var(--surface);
+    border-top: 1px solid rgba(154, 175, 167, 0.1);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--digital-green);
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+}
